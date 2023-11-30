@@ -66,7 +66,7 @@ let ParseTable = async (outputArray = [], baseURL) => {
 
     // 將日期儲存到dc.date
     output['dc.date'] = ResolveDate(date)
-        //抓取提問人
+    //抓取提問人
     output['dc.creator'] = eleTr.find('td:eq(0)').html()
 
     // =================================================================
